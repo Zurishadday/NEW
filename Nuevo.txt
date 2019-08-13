@@ -1,1 +1,3 @@
-Estoy probando git2.
+Estoy probando git2.s
+Estoy escribiendo este nuevo cambio, ya que 
+no se debo hacer en la historia de mi vida.
