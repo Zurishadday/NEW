@@ -1,0 +1,112 @@
+/*reglas de css
+selectores : Como indentificamos un elemento html
+declaraciones : todo lo que hacemos con ese selector
+propiedades : cosas particulares con esos elementos
+valores : esperan recibir de esos elementos.
+*/
+
+
+/*
+header {
+    background: red;
+}
+*/
+
+
+/* selector de etiqueta : header -section -article -etc. */
+
+
+/* selector descendent: body header nav ol li a {}*/
+
+
+/* class: .link */
+
+
+/* selector de id: #(id) */
+
+body {
+    font-family: 'Playfair Display', serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    background: whitesmoke;
+    margin: 0px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: Arial, Helvetica;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    line-height: 2em;
+    /* define espaciado de altura*/
+    font-size: 40px;
+    font-weight: normal;
+    font-style: italic;
+    /* letter-spacing: 2em; */
+    text-decoration: underline;
+    margin: 0px 50px 0px
+}
+
+.portfolio {
+    background: yellow;
+}
+
+.project {
+    /*border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-left: 10px solid orange;
+    border-bottom: 10px solid pink;*/
+    border-color: red;
+    border-width: 15px;
+    border-style: solid;
+    margin: 50px;
+    padding: 100px;
+    background: gray;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.project-details {
+    width: 500px;
+    height: 50px;
+}
+
+.project-imagesContainer {
+    width: 300px;
+}
+
+.header {
+    background-color: chartreuse;
+}
+
+
+/* Padre */
+
+.flexbox {
+    /* se acomoda segun la necesidad */
+    height: 200px;
+    display: flex;
+    /* se acomoda segun el tamaño del browser */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; estatico */
+    /* Se acomoda al final de forma horizonal */
+    justify-content: flex-end;
+    /* Se acomoda al final de forma vertical y en el centro*/
+    align-items: center;
+    /* Se acomoda una tras otra como columna */
+    flex-direction: column;
+}
+
+
+/* Hijo de flexbox */
+
+.box {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border: 1px solid red;
+    flex-shrink: 0;
+}
